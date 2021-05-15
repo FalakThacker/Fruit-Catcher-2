@@ -76,10 +76,10 @@ class Game{
             textSize(25);
             fill("white");
             text("Player 1 : " +allPlayers.player1.score,50,50);
-            text("Player 2 : " +allPlayers.player1.score,50,100)
+            text("Player 2 : " +allPlayers.player2.score,50,100)
 
             if(player.score>=10){
-                this.end();
+                player.end();
             }
            
 
@@ -128,10 +128,10 @@ class Game{
         clearInterval();
         fill("blue");
         textSize(40);
-        text("Game Over" ,350,300)
+        text("Game Over" ,350,300);
+        console.log("Game Ended");
+
     }
 
-    end(){
-       console.log("Game Ended");
-    }
+   
 }
